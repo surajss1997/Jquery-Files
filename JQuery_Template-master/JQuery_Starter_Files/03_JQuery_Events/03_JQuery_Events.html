@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../bootstrap/css/style.css">
+    <link rel="stylesheet" href="03_styles.css">
+    <title>JQuery Events</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Events</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <!-- Click Event -->
+    <h2>Click Event</h2>
+    <button class="btn btn-danger" id="btn-1">login</button>
+
+    <br><br>
+    <!-- DBL Click Event -->
+    <h2>DBL Click Event</h2>
+    <button class="btn btn-success" id="btn-2">register</button>
+
+    <br><br>
+    <!-- Toggle Effect -->
+    <h2>Toggle Effect</h2>
+    <button class="btn btn-danger" id="btn-3">login</button>
+
+    <!-- keyup event -->
+    <h2>Keyup event</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Type Here" id="input-field">
+                            </div>
+                        </div>
+                        <div class="card-body bg-light">
+                            <h5 class="display-4 text-white" id="input-msg"></h5>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- SMS App -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                           <h3>SMS App</h3>
+                        </div>
+                       <form>
+                           <div class="card-body bg-light">
+                                <textarea id="text-area" class="form-control" rows="4" placeholder="Type your text" maxlength="100"></textarea>
+                           </div>
+                           <div class="card-footer bg-light">
+                                <h3>The characters Remaining : <span class="font-weight-bold text-white" id="char-count">100</span></h3>
+                           </div>
+                       </form>
+                    </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Change Event -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h3>Change Event</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <select class="form-control" id="select-box">
+                                            <option value="">Select a Color</option>
+                                            <option value="RED">RED</option>
+                                            <option value="GREEN">GREEN</option>
+                                            <option value="BLUE">BLUE</option>
+                                            <option value="BLACK">BLACK</option>
+                                            <option value="ORANGE">ORANGE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h3 class="font-weight-bold text-white" id="selected-option"></h3>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Password -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3>Change Password</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <input type="password" class="form-control" id="password-box">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <input type="checkbox" class="mr-3" id="check-box"> Show Password
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../jquery/jquery-3.4.0.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="03_app.js"></script>
+</body>
+</html>
+

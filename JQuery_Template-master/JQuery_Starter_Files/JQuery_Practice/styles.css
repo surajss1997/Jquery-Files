@@ -1,0 +1,14 @@
+form{
+    background-color: lightgreen;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    font-family: Arial,sans-serif;
+}
+h2{
+    margin-top: 5px;
+    font-size: 40px;
+}
+input[type='text']{
+    font-size: 40px;
+}
